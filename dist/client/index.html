@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ChainSynth</title>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./css/chainsynth.css" />
+        <link rel="stylesheet" href="./css/loader-anim.css" />
+        <script src="https://kit.fontawesome.com/ebf2cd1147.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src="bundle.js"></script>
+        <div id="canvas-container" style="position: absolute"></div>
+        <a href="https://availproject.org">
+            <img src="./img/avail-logo.svg" alt="Avail" class="network-logo" />
+        </a>
+        <div class="page-spinner" id="page-spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="loading-status" id="loading-status">:: connecting to avail network ::</div>
+        <div class="start-button" id="start-button">START<br />CHAINSYNTH</div>
+        <!-- left panel -->
+        <div class="left-panel">
+            <div class="chainsynth-logo">
+                <span class="chainsynth-logo">CHAINSYNTH</span>
+                <span class="chainsynth-version" id="chainsynth-version">v0.1.0-ALPHA</span>
+            </div>
+        </div>
+        <!-- block data -->
+        <div class="block-progress-container">
+            <div class="block-progress" id="block-progress"></div>
+            <div class="block-number" id="block-number"></div>
+        </div>
+        <div class="block-details" id="block-details"></div>
+        <div class="extrinsic-count" id="extrinsic-count"></div>
+        <div class="event-count" id="event-count"></div>
+        <div class="root-note" id="root-note"></div>
+    </body>
+</html>
